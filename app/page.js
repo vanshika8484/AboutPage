@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Fireflames from "./components/Fireflames";
 import Fire from "./components/Fire";
 import NewFireFlames from "./components/NewFireFlames";
+import FireVideo from "./components/FireVedio";
 
 
 
@@ -49,9 +50,10 @@ export default function Home() {
 
       {/* Particles Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-       <NewFireFlames />
+       {/* <NewFireFlames /> */}
         {/* <Fireflames /> */}
    {/* <Fire /> */}
+   <FireVideo />
       </div>
 
       {/* Initial Title (Fades out on scroll) */}
