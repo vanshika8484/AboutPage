@@ -99,7 +99,7 @@ function ParticleField({ count = 4000 }) {
 
 export default function ParticleGround() {
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none">
+    <div className="absolute inset-0 z-0 pointer-events-none">
       <Canvas
         camera={{ position: [0, 4, 18], fov: 55 }}
         gl={{ antialias: true, alpha: false }}

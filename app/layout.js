@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-black text-white min-h-screen">
         {children}
-        <GlobalLiquidHover />
+        {/* <GlobalLiquidHover /> */}
       </body>
     </html>
   );

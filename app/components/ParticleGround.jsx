@@ -85,7 +85,7 @@ function ParticleField({ count = 6000 }) {
 
 export default function ParticleGround() {
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none">
+    <div className="absolute inset-0 z-0 pointer-events-none">
       <Canvas camera={{ position: [0, 5, 15], fov: 60 }}>
         <color attach="background" args={["#000000"]} />
         <fog attach="fog" args={["#000000", 10, 50]} />
