@@ -10,7 +10,8 @@ import Fireflames from "./components/Fireflames";
 import Fire from "./components/Fire";
 import NewFireFlames from "./components/NewFireFlames";
 import FireVideo from "./components/FireVedio";
-
+import NewParticle from "./components/NewParticle";
+import ParticleCluster from "./components/ParticleCluster";
 
 
 // In page.js
@@ -53,7 +54,10 @@ export default function Home() {
        {/* <NewFireFlames /> */}
         {/* <Fireflames /> */}
    {/* <Fire /> */}
-   <FireVideo />
+   {/* <FireVideo /> */}
+   {/* <NewParticle /> */}
+   {/* <Particles /> */}
+   <ParticleCluster/>
       </div>
 
       {/* Initial Title (Fades out on scroll) */}
@@ -62,7 +66,7 @@ export default function Home() {
           showInitialContent ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <h1 className="text-[clamp(100px,20vw,270px)] font-bold text-white pl-5 pr-5 pt-[300px] leading-none  ">
+        <h1 className="text-[clamp(90px,20vw,250px)] font-bold text-white pl-5 pr-5 pt-[320px] leading-none  ">
           HEYFYNIX
         </h1>
         <h2 className="text-2xl md:text-3xl font-bold text-white text-right pr-10 -mt-16 md:-mt-5">

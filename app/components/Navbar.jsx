@@ -47,33 +47,19 @@ export default function LusionNavbar() {
   return (
     <>
       {/* LEFT SIDE VERTICAL LOGO */}
-      <div className="fixed left-16 top-10 z-50">
-        <h1 className="text-white text-[30px] font-bold leading-none rotate-0">
+      <div className="fixed left-16 top-12 z-50">
+        <h1 className="text-white text-[22px] font-bold leading-none rotate-0">
           HEYFYNIX
         </h1>
       </div>
 
       {/* RIGHT SIDE BUTTON GROUP */}
-      <div className="fixed right-20 top-10 z-50 flex flex-row items-center space-x-6">
+      <div className="fixed right-10 top-10 z-50 flex flex-row items-center space-x-6">
         {/* SOUND BUTTON */}
-        {/* <button
-          onClick={() => setSoundOn((prev) => !prev)}
-          className="w-12 h-12 flex items-center justify-center rounded-full 
-                     bg-gray-200 backdrop-blur-md border border-white/30 
-                     text-black text-2xl  transition cursor-pointer hover:bg-blue-500"
-          aria-label={soundOn ? "Mute" : "Unmute"}
-        >
-          {/* 2. Show Minus when muted, Activity when playing */}
-          {/* {soundOn ? (
-            <Image src="/Activity.svg" alt="Sound on" width={24} height={24} className="invert-0"   />
-          ) : (
-            <Image src="/Minus.svg" alt="Sound off" width={24} height={24} className="invert-0" />
-          )}
-        </button> */} 
-
+       
        <button
   onClick={() => setSoundOn((prev) => !prev)}
-  className="relative w-12 h-12 flex items-center justify-center rounded-full 
+  className="relative w-10 h-10 flex items-center justify-center rounded-full 
              bg-gray-200 backdrop-blur-md border border-white/30 
              text-black text-2xl transition cursor-pointer hover:bg-blue-500"
   aria-label={soundOn ? "Mute" : "Unmute"}
@@ -91,34 +77,29 @@ export default function LusionNavbar() {
 
 
 
-        {/* LET'S TALK */}
+     
        {/* LET'S TALK */}
-<button
-  className="flex items-center h-12 gap-4 px-6 py-2 p-4 rounded-full bg-gray-700 backdrop-blur-md 
-              text-white text-md font-semibold tracking-wider 
-             hover:bg-white/30 transition group"
->
-  <span className="relative">
-    LET'S TALK
-    <span className="absolute top-3 -right-4 w-1 h-1 bg-white rounded-full 
-                    group-hover:animate-pulse"></span>
-  </span>
-</button>
+
+       <button className="group relative px-6 py-2 rounded-full bg-white/20 backdrop-blur-md 
+                            text-white font-bold tracking-tighter
+                           hover:bg-blue-500 transition-all duration-300 flex items-center gap-4">
+          <span>LET'S TALK</span>
+       </button>
+
 
         {/* MENU BUTTON */}
-        <button
-          onClick={() => setMenuOpen((prev) => !prev)}
-          className="px-6 py-2 h-10 rounded-full bg-gray-200 backdrop-blur-md 
-                     border border-white/30 text-black text-md font-bold tracking-wider 
-                     hover:bg-white/30 transition"
+       <button
+          onClick={() => setMenuOpen(prev => !prev)}
+          className="px-6 py-2 rounded-full bg-gray-200 backdrop-blur-md 
+                     border border-white text-black font-semibold tracking-wider 
+                     hover:bg-white transition-all duration-300 flex items-center gap-2"
         >
-         <span className="relative">
-    MENU
-    <span className="absolute top-2 -right-4 w-1 h-1 bg-black rounded-full 
-                    group-hover:animate-pulse"></span>
-                    <span className="absolute top-2 -right-2 w-1 h-1 bg-black rounded-full 
-                    group-hover:animate-pulse"></span>
-  </span>
+          MENU
+          <span className="flex gap-1">
+            <span className="w-1.5 h-1.5 bg-black rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-black rounded-full"></span>
+            
+          </span>
         </button>
       </div>
 
